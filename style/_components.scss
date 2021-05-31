@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+$gradientGreen:linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+
+
+.hamburger{
+    display: none;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    .navbar-item{
+        padding: 15px;
+        font-size: 14px;
+        line-height: 16px;
+        color: #9597A5;
+    }
+}
+
+.request-invite{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding: 8px 32px;
+    background: $gradientGreen;
+    border-radius: 22px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+
+    &:hover{
+        opacity: 0.7;
+    }
+}
+
+.section__prg{
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.28125px;
+    color: #9597A5;
+}
+
+.section__title{
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 64px;
+    letter-spacing: -0.714286px;
+    color: #2D314D;
+}
+
+
+.ftr-item{
+    padding: 12px;
+    margin: 6px;
+
+    .icon-box{
+        background: $gradientGreen;
+        height: 72px;
+        width: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    &__title{
+        font-weight: 100;
+        font-size: 24px;
+        line-height: 28px;
+        color: #2D314D;
+        padding: 40px 0 24px;
+    }
+    &__prg{
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: -0.25px;
+        color: #9597A5;
+    }
+}
+
+.articles{
+    background: #F2F2F2;
+    .container{
+        .section__title{
+            margin-bottom: 40px;
+        }
+
+        .article-list{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 30px;
+            .article{
+                background-color: #FFFFFF;
+                border-radius: 5px;
+                img{
+                    width: 100%;
+                    border-radius: 5px 5px 0 0;
+                }
+                .article-brief{
+                    padding: 24px;
+                    .author{
+                        font-size: 10px;
+                        line-height: 18px;
+                        letter-spacing: -0.15625px;
+                        color: #9597A5;
+                        font-weight: normal;
+                    }
+                    .article-title{
+                        font-weight: 100;
+                        font-size: 16px;
+                        line-height: 20px;
+                        letter-spacing: -0.285714px;
+                        color: #2D314D;
+                        margin: 8px 0;
+
+                        &:hover{
+                            color: #30C88F;
+                        }
+                    }
+                    .article-prg{
+                        font-size: 13px;
+                        line-height: 18px;
+                        letter-spacing: -0.203125px;
+                        color: #9597A5;
+                    }
+                }
+            }
+
+        }
+    }
+}
