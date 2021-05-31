@@ -19,11 +19,28 @@
   color: #9597A5;
 }
 
+.navbar .navbar-item::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  margin: auto;
+  display: block;
+  background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+  -webkit-transform: translate(0, 12px);
+          transform: translate(0, 12px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.navbar .navbar-item:hover::after {
+  width: 100%;
+}
+
 .request-invite {
   font-weight: 500;
   font-size: 14px;
   line-height: 28px;
-  color: #FFFFFF;
   padding: 8px 32px;
   background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
   border-radius: 22px;
@@ -31,6 +48,10 @@
   outline: none;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+.request-invite a {
+  color: #FFFFFF;
 }
 
 .request-invite:hover {
@@ -148,6 +169,73 @@
   line-height: 18px;
   letter-spacing: -0.203125px;
   color: #9597A5;
+}
+
+.footer {
+  background-color: #2D314D;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .container .col-3 {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.footer .container .col-3 .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 14px;
+  padding-top: 36px;
+}
+
+.footer .container .col-3 .socials .social-link {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.footer .container .col-3 .socials .social-link:hover path {
+  fill: #30C88F;
+}
+
+.footer .container .col-2 {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+.footer .container .col-2 .navbar {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .container .col-2 .navbar .navbar-item {
+  color: #FFFFFF;
+}
+
+.footer .container .col-2 .navbar .navbar-item:hover {
+  color: #30C88F;
+}
+
+.footer .container .col-7 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  text-align: end;
+}
+
+.footer .container .col-7 .copyright {
+  padding-top: 24px;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: right;
+  letter-spacing: -0.234375px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
 }
 
 @media only screen and (max-width: 910px) {
@@ -276,6 +364,10 @@
   padding: 80px 0 100px;
 }
 
+.footer {
+  padding: 48px 0;
+}
+
 @media (min-width: 992.5px) and (max-width: 1200px) {
   .container {
     max-width: 1140px;
@@ -296,13 +388,13 @@
 
 @media (min-width: 375px) and (max-width: 576px) {
   .container {
-    max-width: 540px;
+    width: 90%;
   }
 }
 
-@media screen and (width: 375px) {
+@media screen and (max-width: 375px) {
   .container {
-    max-width: 350px;
+    width: 90%;
   }
 }
 /*# sourceMappingURL=main.css.map */
